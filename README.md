@@ -54,8 +54,10 @@ People from low-income backgrounds are those who are forced to continue working 
 ### Cases By County
 ![Cases By County](https://github.com/czhao028/DataScience/blob/master/cases%20by%20county.PNG)
 
+To really see how these different factors may have had a pull on coronavirus outbreak, let's look at a few different maps:
 
- 
+![prexisting](https://github.com/czhao028/DataScience/blob/master/pre-existing.PNG)
+![prexisting](https://github.com/czhao028/DataScience/blob/master/pictures-country.jpg)
  ## What's Been Accomplished
  
  ### Issues Tackled
