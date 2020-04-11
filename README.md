@@ -61,7 +61,7 @@ People from low-income backgrounds are those who are forced to continue working 
   </ul>
 </ol>
 
-### Cases By County
+### Cases per 10,000 residents
 ![Cases By 10,000](https://github.com/czhao028/DataScience/blob/master/hotspot%20by%2010%2C000.PNG)
 
 To really see how these different factors may have had a pull on coronavirus outbreak, let's look at a few different maps:
