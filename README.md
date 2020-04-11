@@ -4,7 +4,11 @@ Adelle Jia (ajia90) and Christine Zhao (czhao028)
 
 
 ## Motivation
+<<<<<<< HEAD
 This goal is ambitious: like predicting the stock market, coronavirus outbreak predictions can be extremely tricky. There are numerous intertwining causes of outbreak, as well as unaccounted variables: someone with coronavirus decides to have a birthday party, and the virus spreads like wildfire in an otherwise unsusceptible area. Nonetheless, after reading [a few opinions by experts](https://www.statnews.com/2020/04/01/coronavirus-how-bad-it-gets-different-communities/), there are a few factors that we can identify that make a city more vulnerable than others. Our project seeks to identify <b> which of those factors are most powerful in predicting an outbreak </b> and <b>the probability that counties in Houston are as vulnerable or likely to a massive coronavirus spread</b>.
+=======
+This goal is ambitious: like predicting the stock market, coronavirus outbreak predictions can be a tricky thing. An unaccounted variable can come into play: someone with coronavirus decided to have a birthday party, and the virus spreads like wildfire. Nonetheless, after reading [a few opinions by experts](https://www.statnews.com/2020/04/01/coronavirus-how-bad-it-gets-different-communities/), there are a few factors that we can identify that make a city more vulnerable than others. Our project seeks to identify <b> which of those factors are most powerful in predicting an outbreak </b> and <b>the probability that Houston is vulnerable or likely to a massive coronavirus spread</b>.
+>>>>>>> 15d5ff24c9a10389b2b5acfaeec9f532ad8fe1b9
 
 ### Does Houston carry the deadly combination of factors that rapidly spreads COVID?
 Are other less-acknowledged areas of the country in danger of becoming the next epicenter of the epidemic? The quicker we can predict which areas are most vulnerable, the more knowledgeable we can be in directing assistance towards struggling hospitals or prevention of spread in those areas. With over 12,000 people confirmed with COVID-19 in New Orleans, and 1,300+ confirmed in the Houston-Galveston-Sugarland Metropolitan area, quick calculations could save lives. 
@@ -59,8 +63,8 @@ In addition to looking at factors that directly influence the mechanistic spread
   </ul>
 </ol>
 
-### Cases By County
-![Cases By County](https://github.com/czhao028/DataScience/blob/master/cases%20by%20county.PNG)
+### Cases per 10,000 residents
+![Cases By 10,000](https://github.com/czhao028/DataScience/blob/master/hotspot%20by%2010%2C000.PNG)
 
 To really see how these different factors may have had a pull on coronavirus outbreak, let's look at a few different maps:
 
@@ -77,7 +81,7 @@ We've loaded all the data we've been able to clean, organize, geocode, assign co
 - Pre-existing condition estimates: Christine has messaged the author of the study & they've agreed to provide the data. Hope to hear from her soon as well
  
  ## Our Timeline
-By the end of the second week, we will have all our data into one spreadsheet to feed into different models to try: the first we're attempting is <b>backpropogation through a neural network</b>, so we can identify the weights of the different factors. Does airport travel have less of an impact now, now that people are at home? Does economic status affect coronavirus outbreak more than we thought it would? Which combination of factors is most deadly for a city to have? How many hidden layers will the neural network have? We strive to have the data cleaned by mid-week and start testing different models on our numbers by Friday. 
+By the end of the second week, we will have all our data into one spreadsheet to feed into different models to try: the first we're attempting is <b>backpropagation through a neural network</b>, so we can identify the weights of the different features. Does airport travel have less of an impact now, now that people are at home? Does economic status affect coronavirus outbreak more than we thought it would? Which combination of factors is most deadly for a city to have? How many hidden layers will the neural network have? We strive to have the data cleaned by mid-week and start testing different models on our numbers by Friday. 
 
 By the end of the third week, we will have identified a suitable model that fits our data & even start constructing the algorithms from. Christine has taken a few Artificial Intelligence Courses & Adelle is in Computational Neuro. We hope we can deeply investigate how different machine learning techniques predict coronavirus outcomes in the Houson area. 
  
