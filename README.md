@@ -9,11 +9,11 @@ This goal is ambitious: like predicting the stock market, coronavirus outbreak p
 After individually going through [current hotspots](https://www.scientificamerican.com/article/map-reveals-hidden-u-s-hotspots-of-coronavirus-infection/) as defined by cases per 10,000 people (including rural areas that often get overlooked), we listed out the major reasons that coronavirus was brought to regions & what worsened the problem in [this document](https://docs.google.com/document/d/1aYphRfF8b_siem5ZNdMKAaTm5iFiyQtQwD_adOMns5U/edit?usp=sharing). By examining expert opinions & narrowing down into the most recurring causes, we chose 6 factors to investigate the importance of: 
 <ol>
   
-  <li> <b> Travel </b> 
+  <li> <b> Transportation </b> 
     <ul>
       <li> 
         
-The majority of cases were brought to coasts and small towns by international or out-of-state travel
+The majority of cases were brought to coasts and small towns by international or out-of-state travel. We look at most traveled airplane routes coming into each city; for small towns, this is their link to large, coronavirus-heavy areas. 
     </ul>
    <li> <b> Population Density </b>
      <ul>
@@ -23,7 +23,9 @@ The majority of cases were brought to coasts and small towns by international or
      </ul>
     <li><b> Pre-Existing Conditions Population</b>
       <ul> 
-        <li>It's well-known that those with pre-existing conditions are much more suspectible to this respitory disease. We investigate surveys by the CDC to estimate this per metropolitan area. 
+        <li>
+          
+It's well-known that those with pre-existing conditions are much more suspectible to this respitory disease. We investigate surveys by the CDC to estimate this per metropolitan area. 
       </ul>
       
  <li> <b>Low-income Population</b>
@@ -47,8 +49,23 @@ People from low-income backgrounds are those who are forced to continue working 
    
 [Slow response time, especially in New York](https://www.cnn.com/2020/03/26/us/new-york-coronavirus-explainer/index.html) is the mantra nowadays as we saw our nations & municipalities slowly react to a pandemic identified 2 months ago. Though states have been swift to enact social distancing, there are still a key few states who hold out. 
   </ul>
-     
- </ol>
+</ol>
+ 
+ ## What's Been Accomplished
+ 
+ ### Issues Tackled
+ We started on Monday & have been working every day since. The bulk of the work is making sure that all of the data is in one format: the Census uses zip codes and tracts, while the CDC's/Kaiser's pre-existing condition projections only have data for metropolitan areas (MSA). In addition, Harris County doesn't report cases but only as a metropolitan area: if we used zip codes, then that would fail to capture all reported cases. In addition, medically underserved areas only used counties, and airports are likely to service more than 1 zip code or county, leaning towards metropolitan areas. Airports were also only given their airport code & GPS coordinates. In the end, we decided to use all the information we had for MSA's and apply them to each county, with most of our data being on the county-level to ensure most accuracy in representation the population of the area.
+ 
+ ### Our Solutions
+We've loaded all the data we've been able to clean, organize, geocode, assign counties/MSA's into Jupyter using pandas (Python) or into Excel Files. This includes poverty level by county, using US Census 2010 data, airports (and corresponding MSA) & most common incoming travel routes, and population density per MSA. Not all of the data is yet on Github, since Adelle had some issues using Github on Friday, but they will be by next week. What's not done yet is 
+- Medically Underserved Areas: the data by zip-code is only available through ArcGIS so we've requested a license, hopefully to be fufilled by Monday
+- Pre-existing condition estimates: Christine has messaged the author of the study & they've agreed to provide the data. Hope to hear from her soon as well
+- State/county response: work-in-progress. 
+ 
+ ## Our Timeline
+ By the end of the second week, 
+ 
+
       
         
 
