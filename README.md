@@ -31,12 +31,16 @@ After individually going through [current hotspots](https://www.scientificameric
   
   <li> <b>Medically Underserved Areas</b>
   <ul> 
-    <li> In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of [ICU beds]:(https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
+    <li> In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of 
+      
+ [ICU beds](https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
   </ul>
   
   <li> <b>State/County Response Time & Stay-At-Home Orders (as of March 30)</b>
 <ul> 
-  <li> [Slow response time, especially in New York]:(https://www.cnn.com/2020/03/26/us/new-york-coronavirus-explainer/index.html) is the mantra nowadays as we saw our nations & municipalities slowly react to a pandemic identified 2 months ago. Though states have been swift to enact social distancing, there are still a key few states who hold out. 
+  <li> 
+   
+[Slow response time, especially in New York](https://www.cnn.com/2020/03/26/us/new-york-coronavirus-explainer/index.html) is the mantra nowadays as we saw our nations & municipalities slowly react to a pandemic identified 2 months ago. Though states have been swift to enact social distancing, there are still a key few states who hold out. 
   </ul>
      
  </ol>
