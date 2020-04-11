@@ -7,7 +7,7 @@ Adelle Jia (ajia90) and Christine Zhao (czhao028)
 This goal is ambitious: like predicting the stock market, coronavirus outbreak predictions can be a tricky thing. An unaccounted variable can come into play: someone with coronavirus decided to have a birthday party, and the virus spreads like wildfire. Nonetheless, after reading [a few opinions by experts](https://www.statnews.com/2020/04/01/coronavirus-how-bad-it-gets-different-communities/), there are a few factors that we can identify that make a city more vulnerable than others. Our project seeks to identify <b> which of those factors are most powerful in predicting an outbreak </b> and <b>the probability that Houston as vulnerable or likely to a massive coronavirus spread</b>.
 
 ### Does Houston carry the deadly combination of factors that rapidly spreads COVID?
-Are other less-acknowledged areas of the country in danger of becoming the next epicenter of the epidemic? The quicker we can predict which areas are most vulnerable, the more we can do to shut down the virus before it kills people. 
+Are other less-acknowledged areas of the country in danger of becoming the next epicenter of the epidemic? The quicker we can predict which areas are most vulnerable, the more we can do to shut down the virus before it kills people. With over 12,000 people confirmed with COVID-19 in New Orleans, and 1,300+ confirmed in the Houston-Galveston-Sugarland Metropolitan area, quick calculations could save lives.
 
 ### Millions of at-risk Americans live in Counties with Ventilator & ICU Shortages
 ![](https://github.com/czhao028/DataScience/blob/master/no%20icu%20beds.PNG)
@@ -78,7 +78,9 @@ We've loaded all the data we've been able to clean, organize, geocode, assign co
 - State/county response: work-in-progress. 
  
  ## Our Timeline
- By the end of the second week, we will have all our data into one spreadsheet to feed into different models to try: the first we're attempting is backpropogation through a neural network, so we can identify the weights of the different factors. Does airport travel have less of an impact now, now that people are at home? Does economic status affect coronavirus outbreak more than we thought it would? Which combination of factors is most deadly for a city to have?
+By the end of the second week, we will have all our data into one spreadsheet to feed into different models to try: the first we're attempting is backpropogation through a neural network, so we can identify the weights of the different factors. Does airport travel have less of an impact now, now that people are at home? Does economic status affect coronavirus outbreak more than we thought it would? Which combination of factors is most deadly for a city to have? How many hidden layers will the neural network have? We strive to have the data cleaned by mid-week and start testing different models on our numbers by Friday. 
+
+By the end of the third week, we will have identified a suitable model that fits our data & even start doing the calculations by hand. Christine has taken a few Artificial Intelligence Courses & Adelle is in Computational Neuro. We hope we can deeply investigate how the machines are doing the work & replicate their magic.
  
 
       
