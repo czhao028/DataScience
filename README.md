@@ -32,6 +32,7 @@ After individually going through [current hotspots](https://www.scientificameric
   <li> <b>Medically Underserved Areas</b>
   <ul> 
     <li> In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of 
+      
  [ICU beds](https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
   </ul>
   
