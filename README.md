@@ -50,6 +50,11 @@ People from low-income backgrounds are those who are forced to continue working 
 [Slow response time, especially in New York](https://www.cnn.com/2020/03/26/us/new-york-coronavirus-explainer/index.html) is the mantra nowadays as we saw our nations & municipalities slowly react to a pandemic identified 2 months ago. Though states have been swift to enact social distancing, there are still a key few states who hold out. 
   </ul>
 </ol>
+
+### Cases By County
+![Cases By County](https://github.com/czhao028/DataScience/blob/master/cases%20by%20county.PNG)
+
+
  
  ## What's Been Accomplished
  
