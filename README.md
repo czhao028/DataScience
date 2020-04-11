@@ -14,11 +14,32 @@ After individually going through [current hotspots](https://www.scientificameric
     </ul>
    <li> Population Density
      <ul>
-      <li> "Density is a factor in this pandemic, as it has been in previous ones. The very same clustering of people that makes our great cities more innovative and productive also makes them, and us, vulnerable to infectious disease." Source is [here](https://www.citylab.com/equity/2020/04/coronavirus-spread-map-city-urban-density-suburbs-rural-data/609394/)
+      <li> "Density is a factor in this pandemic, as it has been in previous ones. The very same clustering of people that makes our great cities more innovative and productive also makes them, and us, vulnerable to infectious disease." Source: https://bit.ly/2wvBocR
      </ul>
-Pre-existing conditions population
-adelle
-Low-income population
-medically underserved areas
-State response time: stay-at-home orders 3/30
+    <li> Pre-Existing Conditions Population
+      <ul> 
+        <li>It's well-known that those with pre-existing conditions are much more suspectible to this respitory disease. We investigate surveys by the CDC to estimate this per metropolitan area.
+      </ul>
+      
+ <li> Low-income Population
+  <ul> 
+    <li> People from low-income backgrounds are those who are forced to continue working despite the transmissable nature of the disease and are therefore more susceptible. There are many estimates that black & Latino populations are equally vulnerable as well, [highlighting the disparty in socioeconomic status perpetuaded over the decades](https://www.nola.com/news/coronavirus/article_d804d410-7852-11ea-ac6d-470ebb61c694.html). We decided to look at low-income populations as many news sources point to economic status as a huge contributor to coronavirus deaths/cases.
+  </ul>
+  
+  <li> Medically Underserved Areas
+  <ul> 
+    <li> In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of [ICU beds](https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
+  </ul>
+  
+  <li> State/County Response Time & Stay-At-Home Orders (as of March 30)
+<ul> 
+  <li> [Slow response time, especially in New York](https://www.cnn.com/2020/03/26/us/new-york-coronavirus-explainer/index.html) is the mantra nowadays as we saw our nations & municipalities slowly react to a pandemic identified 2 months ago. Though states have been swift to enact social distancing, there are still a key few states who hold out. 
+  </ul>
+     
+ </ol>
+      
+        
+
+
+
 
