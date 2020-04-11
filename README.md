@@ -11,11 +11,15 @@ After individually going through [current hotspots](https://www.scientificameric
   
   <li> <b> Travel </b> 
     <ul>
-      <li> The majority of cases were brought to coasts and small towns by international or out-of-state travel
+      <li> 
+        
+The majority of cases were brought to coasts and small towns by international or out-of-state travel
     </ul>
    <li> <b> Population Density </b>
      <ul>
-      <li> "Density is a factor in this pandemic, as it has been in previous ones. The very same clustering of people that makes our great cities more innovative and productive also makes them, and us, vulnerable to infectious disease." Source: https://bit.ly/2wvBocR
+      <li> 
+        
+"Density is a factor in this pandemic, as it has been in previous ones. The very same clustering of people that makes our great cities more innovative and productive also makes them, and us, vulnerable to infectious disease." Source: https://bit.ly/2wvBocR
      </ul>
     <li><b> Pre-Existing Conditions Population</b>
       <ul> 
