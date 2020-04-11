@@ -2,8 +2,16 @@
 
 Adelle Jia (ajia90) and Christine Zhao (czhao028)
 
+
 ## Motivation
-This goal is ambitious: like predicting the stock market, coronavirus outbreak predictions can be a tricky thing. An unaccounted variable can come into play: someone with coronavirus decided to have a birthday party, and the virus spreads like wildfire. Nonetheless, after reading [a few opinions by experts](https://www.statnews.com/2020/04/01/coronavirus-how-bad-it-gets-different-communities/), there are a few factors that we can identify that make a city more vulnerable than others. Our project seeks to identify which of those factors are most powerful in predicting an outbreak and the probability that Houston as vulnerable or likely to a massive coronavirus spread.
+This goal is ambitious: like predicting the stock market, coronavirus outbreak predictions can be a tricky thing. An unaccounted variable can come into play: someone with coronavirus decided to have a birthday party, and the virus spreads like wildfire. Nonetheless, after reading [a few opinions by experts](https://www.statnews.com/2020/04/01/coronavirus-how-bad-it-gets-different-communities/), there are a few factors that we can identify that make a city more vulnerable than others. Our project seeks to identify <b> which of those factors are most powerful in predicting an outbreak </b> and <b>the probability that Houston as vulnerable or likely to a massive coronavirus spread</b>.
+
+### Does Houston carry the deadly combination of factors that rapidly spreads COVID?
+Are other less-acknowledged areas of the country in danger of becoming the next epicenter of the epidemic? The quicker we can predict which areas are most vulnerable, the more we can do to shut down the virus before it kills people. 
+
+### Millions of at-risk Americans live in Counties with Ventilator & ICU Shortages
+![](https://github.com/czhao028/DataScience/blob/master/no%20icu%20beds.PNG)
+The data is staggering: a large portion of the country have hospitals with no ICU beds. [More than 7 million people who are age 60 and up are at risk.](https://khn.org/news/as-coronavirus-spreads-widely-millions-of-older-americans-live-in-counties-with-no-icu-beds/) The quicker people in at-risk areas can identify alternative means of hospital care, and the quicker we can move to put ICU beds in vulnerable areas identified by our model, the safer we become in this country. 
 
 ## Methodology
 After individually going through [current hotspots](https://www.scientificamerican.com/article/map-reveals-hidden-u-s-hotspots-of-coronavirus-infection/) as defined by cases per 10,000 people (including rural areas that often get overlooked), we listed out the major reasons that coronavirus was brought to regions & what worsened the problem in [this document](https://docs.google.com/document/d/1aYphRfF8b_siem5ZNdMKAaTm5iFiyQtQwD_adOMns5U/edit?usp=sharing). By examining expert opinions & narrowing down into the most recurring causes, we chose 6 factors to investigate the importance of: 
@@ -70,7 +78,7 @@ We've loaded all the data we've been able to clean, organize, geocode, assign co
 - State/county response: work-in-progress. 
  
  ## Our Timeline
- By the end of the second week, 
+ By the end of the second week, we will have all our data into one spreadsheet to feed into different models to try: the first we're attempting is backpropogation through a neural network, so we can identify the weights of the different factors. Does airport travel have less of an impact now, now that people are at home? Does economic status affect coronavirus outbreak more than we thought it would? Which combination of factors is most deadly for a city to have?
  
 
       
