@@ -24,16 +24,17 @@ After individually going through [current hotspots](https://www.scientificameric
       
  <li> <b>Low-income Population</b>
   <ul> 
-    <li> People from low-income backgrounds are those who are forced to continue working despite the transmissable nature of the disease and are therefore more susceptible. There are many estimates that black & Latino populations are equally vulnerable as well, 
+    <li> 
       
+People from low-income backgrounds are those who are forced to continue working despite the transmissable nature of the disease and are therefore more susceptible. There are many estimates that black & Latino populations are equally vulnerable as well, 
 [highlighting the disparty in socioeconomic status perpetuaded over the decades](https://www.nola.com/news/coronavirus/article_d804d410-7852-11ea-ac6d-470ebb61c694.html). We decided to look at low-income populations as many news sources point to economic status as a huge contributor to coronavirus deaths/cases.
   </ul>
   
   <li> <b>Medically Underserved Areas</b>
   <ul> 
-    <li> In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of 
-      
- [ICU beds](https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
+    <li> 
+
+ In Albany, GA, few would have expected coronavirus to balloon so quickly: a lack of [ICU beds](https://www.nytimes.com/2020/03/30/us/coronavirus-funeral-albany-georgia.html) and medical care compounded the problem. This issue has been frequently pointed out, that coronavirus cases may soon overpower hospital capabilities. We chose to look at medically underserved areas, as shown in a Google Cloud public dataset.
   </ul>
   
   <li> <b>State/County Response Time & Stay-At-Home Orders (as of March 30)</b>
