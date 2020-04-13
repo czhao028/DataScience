@@ -12,8 +12,8 @@ for i in range(1, sheet.nrows):
     if match == None:
         break
     g0 = match.group(1)
-
     print(g0)
+
     airport_codes.add(g0)
 
 print(len(airport_codes))
