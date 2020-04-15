@@ -1,9 +1,11 @@
 
 import re
 from collections import defaultdict
+import pandas as pd
 
 countyname_to_node = {}
 airportcode_to_county = {}
+#populate it with data from CSV, filtered for data from website
 
 class Node:
     def __init__(self, county_name):
@@ -14,24 +16,22 @@ class Node:
         connection, number_flights = airport_flights
         connection_county = airportcode_to_county[connection] #possible error here
         print(connection_county)
-        try:
+        try: # if Node is already assigned to county
             node_connection = countyname_to_node[connection_county]
-        except:
+        except: # if Node not already created
             node_connection = Node(connection_county)
             countyname_to_node[connection_county] = node_connection
 
-        existing_edge = node_connection.get_connection(self.county_name)
-        if existing_edge > number_flights:
-            self.connections[connection] = existing_edge
-        else:
-            self.connections[connection] = number_flights
+        node_connection.increase_connection(self.county_name, number_flights)
+        self.increase_connection(connection_county, number_flights)
 
     def get_connection(self, county_name):
         #returns number of flights between self & county_name
         return self.connections[county_name]
 
-    def set_connection(self, county_name):
-        #sets the max number of flights between one county & another
+    def increase_connection(self, county_name, num_additional_flights):
+        #increments connection between self Node & other county
+        self.connections[county_name] += num_additional_flights
 
 
 from selenium import webdriver
@@ -41,9 +41,14 @@ for airport_code, county in [("MCO", "Orange County, FL"), ("DCA", "Arlington Co
     driver.get("https://www.flightradar24.com/data/airports/"+airport_code.lower())
     elem = driver.find_element_by_class_name("top-routes")
     print(elem)
+
+    temp_node = countyname_to_node.get(county)
+    if temp_node is None:
+        temp_node = Node(county)
+        countyname_to_node[county] = temp_node
     matches = re.findall(regex_search_string, elem.text)
-    for top_dest, num_flights in matches:
-        print(top_dest, num_flights)
+    for airport_flights in matches:
+        temp_node.add_connection(airport_flights)
     elem.clear()
 
 assert "No results found." not in driver.page_source
