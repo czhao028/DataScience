@@ -1,7 +1,7 @@
 import re
 import xlrd
 
-loc = ("../excel_data/AIRPORTS_FLIGHT24.xlsx")
+loc = ("../excel_data/airport_data/AIRPORTS_FLIGHT24.xlsx")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 print(sheet.nrows)
