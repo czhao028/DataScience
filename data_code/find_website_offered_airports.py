@@ -6,7 +6,7 @@ wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 print(sheet.nrows)
 airport_codes = set()
-for i in range(1, sheet.nrows):
+for i in range(2, sheet.nrows):
     value = sheet.cell_value(i, 0)
     match = re.search("\((.*)\/.*\)", value)
     if match == None:

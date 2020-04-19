@@ -2,9 +2,11 @@
 import re
 from collections import defaultdict
 import pandas as pd
+import pickle as pk
 
 countyname_to_node = {}
-airportcode_to_county = {}
+with open("airports_geocoded.pk", "rb") as pik:
+    airportcode_to_county = pk.load(pik)
 #populate it with data from CSV, filtered for data from website
 
 class Node:
@@ -14,6 +16,7 @@ class Node:
     def add_connection(self, airport_flights):
         assert type(airport_flights) == tuple
         connection, number_flights = airport_flights
+        number_flights = int(number_flights)
         connection_county = airportcode_to_county[connection] #possible error here
         print(connection_county)
         try: # if Node is already assigned to county
@@ -30,18 +33,16 @@ class Node:
         return self.connections[county_name]
 
     def increase_connection(self, county_name, num_additional_flights):
-        #increments connection between self Node & other county
-        self.connections[county_name] += num_additional_flights
+        #determines maximum number of flights between self Node & other county
+        self.connections[county_name] = max(self.connections[county_name], num_additional_flights)
 
 
 from selenium import webdriver
-regex_search_string = "#\d\s(\w{3})\\n(\d+).*\\n"
+regex_search_string = "#\d\s(\w{3})\\n(\d+).*?"
 driver = webdriver.Chrome()
-for airport_code, county in [("MCO", "Orange County, FL"), ("DCA", "Arlington County, VA"), ("PHL", "Philadelphia County, PA")]:
+for airport_code, county in [("CWA","Marathon County, WI"), ("DCA", "Arlington County, VA"), ("MCO", "Orange County, FL"), ("PHL", "Philadelphia County, PA")]:
     driver.get("https://www.flightradar24.com/data/airports/"+airport_code.lower())
     elem = driver.find_element_by_class_name("top-routes")
-    print(elem)
-
     temp_node = countyname_to_node.get(county)
     if temp_node is None:
         temp_node = Node(county)
@@ -49,7 +50,7 @@ for airport_code, county in [("MCO", "Orange County, FL"), ("DCA", "Arlington Co
     matches = re.findall(regex_search_string, elem.text)
     for airport_flights in matches:
         temp_node.add_connection(airport_flights)
-    elem.clear()
 
+countyname_to_node
 assert "No results found." not in driver.page_source
 driver.close()
