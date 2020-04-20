@@ -3,16 +3,23 @@ import re
 from collections import defaultdict
 import pandas as pd
 import pickle as pk
+import csv
 
 countyname_to_node = {}
+
+#populate it with data from CSV, filtered for data from website
 with open("airports_geocoded.pk", "rb") as pik:
     airportcode_to_county = pk.load(pik)
-#populate it with data from CSV, filtered for data from website
 
+hotspots = pd.read_csv(open("../excel_data/HOTSPOTS.csv"))["Metropolitan Statistical Area"].tolist()
+msa_to_counties = pd.read_csv(open("../excel_data/msa_counties.csv"))
+hotspot_counties = msa_to_counties[msa_to_counties["CBSA Title"].isin(hotspots)]
 class Node:
     def __init__(self, county_name):
         self.county_name = county_name
         self.connections = defaultdict(int)
+        self.disease_score = 0
+
     def add_connection(self, airport_flights):
         assert type(airport_flights) == tuple
         connection, number_flights = airport_flights
@@ -36,6 +43,8 @@ class Node:
         #determines maximum number of flights between self Node & other county
         self.connections[county_name] = max(self.connections[county_name], num_additional_flights)
 
+def disease_calculations(list_of_hotspots):
+    
 
 from selenium import webdriver
 regex_search_string = "#\d\s(\w{3})\\n(\d+).*?"

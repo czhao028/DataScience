@@ -1,0 +1,9 @@
+Strategy for the Airport files:
+- Combine MSA Hotspots with MSA-County Data
+    - df[df['MSA'].isin(list_of_MSA's)]
+    - Left with counties in MSA hotspots
+- Iterate through each of those counties, build connections, and add to their disease score
+    - Set the value of the hotspots' disease score to be +inf
+- After, iterate through key,val in airport_code_to_county dictionary,
+  and add their disease scores to a DataFrame
+- Outer-join with ALL COUNTIES IN US; df.fillna(0) to assign a disease score of 0 to all untouched counties
